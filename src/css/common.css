@@ -77,12 +77,19 @@ body {
   flex-direction: column;
 }
 
-.feedback-form label * {
+.feedback-form input,
+.feedback-form textarea {
   font-family: var(--font-family);
   color: #2e2f42;
   border: 1px solid #808080;
   border-radius: 4px;
   padding: 8px 16px;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: transparent;
+  border: 1px solid #000;
 }
 
 .feedback-form button {
@@ -100,4 +107,10 @@ body {
   color: #fff;
 
   margin-top: 8px;
+}
+
+.feedback-form button:hover,
+.feedback-form button:focus {
+  background: #6c8cff;
+  outline: transparent;
 }
